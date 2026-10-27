@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bw-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061a1e" />
+      <stop offset="50%" stop-color="#0b2931" />
+      <stop offset="100%" stop-color="#081b29" />
+    </linearGradient>
+    <linearGradient id="bw-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#00eeff" />
+    </linearGradient>
+    <filter id="bw-glow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="340" fill="url(#bw-bg)"/>
+  <circle cx="500" cy="70" r="120" fill="#10b981" opacity="0.12" filter="blur(35px)"/>
+  <circle cx="100" cy="270" r="100" fill="#00eeff" opacity="0.12" filter="blur(30px)"/>
+
+  <!-- Dashboard Container Window -->
+  <g transform="translate(100, 35)">
+    <rect width="400" height="270" rx="14" fill="#0b2233" stroke="#00eeff" stroke-opacity="0.3" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="400" height="36" rx="14" fill="#061622" />
+    <circle cx="20" cy="18" r="4.5" fill="#ef4444" />
+    <circle cx="34" cy="18" r="4.5" fill="#f59e0b" />
+    <circle cx="48" cy="18" r="4.5" fill="#10b981" />
+    <text x="70" y="22" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#00eeff">BirrWise Financial Management</text>
+
+    <!-- Total Balance Card -->
+    <rect x="20" y="52" width="170" height="75" rx="10" fill="#061b29" stroke="url(#bw-accent)" stroke-width="1" />
+    <text x="32" y="72" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">Total Balance (ETB)</text>
+    <text x="32" y="100" font-family="'Poppins', sans-serif" font-size="18" font-weight="bold" fill="#00eeff">148,250 ETB</text>
+    <text x="32" y="118" font-family="'Poppins', sans-serif" font-size="9" fill="#10b981">▲ +14.6% this month</text>
+
+    <!-- Expenses & Budget Card -->
+    <rect x="210" y="52" width="170" height="75" rx="10" fill="#061b29" stroke="#16384c" stroke-width="1" />
+    <text x="222" y="72" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">Monthly Expenses</text>
+    <text x="222" y="100" font-family="'Poppins', sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">34,800 ETB</text>
+    <text x="222" y="118" font-family="'Poppins', sans-serif" font-size="9" fill="#64748b">Budget: 50,000 ETB</text>
+
+    <!-- Analytics Chart Section -->
+    <rect x="20" y="142" width="360" height="110" rx="10" fill="#061b29" />
+    <text x="34" y="162" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#ededed">Cashflow Analytics</text>
+    
+    <!-- Bar Chart Elements -->
+    <rect x="50" y="200" width="22" height="38" rx="4" fill="#00eeff" opacity="0.8" />
+    <rect x="90" y="180" width="22" height="58" rx="4" fill="#00eeff" opacity="0.9" />
+    <rect x="130" y="210" width="22" height="28" rx="4" fill="#00eeff" opacity="0.6" />
+    <rect x="170" y="170" width="22" height="68" rx="4" fill="#10b981" filter="url(#bw-glow)" />
+    <rect x="210" y="185" width="22" height="53" rx="4" fill="#00eeff" opacity="0.85" />
+    <rect x="250" y="175" width="22" height="63" rx="4" fill="#00eeff" opacity="0.9" />
+    <rect x="290" y="165" width="22" height="73" rx="4" fill="#10b981" filter="url(#bw-glow)" />
+
+    <!-- Trend line -->
+    <polyline points="61,195 101,175 141,205 181,165 221,180 261,170 301,160" fill="none" stroke="#f59e0b" stroke-width="2.5" />
+  </g>
+</svg>
